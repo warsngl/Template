@@ -1,8 +1,14 @@
-<script setup>
+<script>
+import TheNavbar from "./components/TheNavbar.vue";
+export default {
+  components: { TheNavbar },
+};
 </script>
 
-<template>
-<h1>Template 4 Vite</h1>
+<template lang='pug'>
+TheNavbar.mb-8
+.flex.flex-col.items-center
+  router-view
 </template>
 
 <style>
@@ -10,8 +16,10 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #072227;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+  background: #d3dedc;
 }
 </style>
